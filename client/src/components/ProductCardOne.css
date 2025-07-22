@@ -1,0 +1,229 @@
+.product-card-one {
+    position: relative;
+    width: 465px;
+    text-align: center;
+    overflow: hidden;
+    padding-bottom: 20px;
+    padding-left: 6px;
+    padding-right: 6px;
+    background: #fff;
+    transition: box-shadow 0.3s;
+    min-height:500px;
+}
+
+.product-card-one img {
+    width: 100%;
+    border-bottom: 1px solid #eee;
+    display: block;
+    z-index: 1;
+}
+
+.product-info-one {
+    padding: 10px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.product-info-one h3 {
+    font-size: 24px;
+    line-height: 34px;
+    color: #313131;
+    margin-bottom: 14px;
+    font-weight: 700;
+    transition: .3s all ease-in;
+    overflow: hidden;
+}
+
+.product-info-one p {
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+.product-info-one button,
+.product-hover-one button {
+    min-width: 200px;
+    text-transform: uppercase;
+    font-weight: 500;
+    letter-spacing: 1px;
+    font-size: 16px;
+    line-height: 26px;
+    border: 1px solid #be1238;
+    padding: 10px 30px;
+    color: white;
+    background-color: #be1238;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: .3s ease-in;
+    margin: 0 auto;
+}
+
+.product-hover-one {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.9);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.4s ease;
+    z-index: 2;
+}
+
+.product-hover-one h3 {
+    margin-top: 40%;
+    font-size: 22px;
+    color: #2f2f2f;
+}
+
+.product-hover-one p {
+    font-size: 15px;
+    color: #666;
+    margin: 10px 0 20px;
+}
+
+.sizes-one {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.sizes-one span {
+    border: 1px solid #ccc;
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.sizes-one span.active,
+.sizes-one span:hover {
+    background-color: #fff;
+    color: #bd1238;
+    border-color: #bd1238;
+}
+
+.product-card-one:hover .product-hover-one {
+    opacity: 1;
+    top: 0;
+    position: absolute;
+    bottom: -15px;
+    left: 0;
+    padding: 60px 40px 0;
+    box-sizing: border-box;
+    text-align: center;
+    background: linear-gradient(178.9deg, rgba(255, 255, 255, 0) 2.64%, #fff 40.17%);
+    border: 1px solid black;
+}
+.product-card-one:hover {
+    min-height:580px;
+} 
+
+@media screen and (max-width: 768px) {
+  .product-card-one {
+    width: 100%;
+    max-width: 350px; /* Adjust max-width for tablets */
+    min-height: 450px;
+    padding-bottom: 15px;
+  }
+
+  .product-card-one:hover {
+    min-height: 500px;
+  }
+
+  .product-info-one h3 {
+    font-size: 20px;
+    line-height: 28px;
+    margin-bottom: 10px;
+  }
+
+  .product-info-one p {
+    font-size: 16px;
+  }
+
+  .product-info-one button,
+  .product-hover-one button {
+    min-width: 180px;
+    font-size: 14px;
+    padding: 8px 25px;
+  }
+
+  .product-hover-one h3 {
+    font-size: 20px;
+    margin-top: 30%; /* Adjust margin-top for smaller screens */
+  }
+
+  .product-hover-one p {
+    font-size: 13px;
+    margin: 8px 0 15px;
+  }
+
+  .sizes-one span {
+    padding: 4px 8px;
+    font-size: 12px;
+  }
+
+  .product-card-one:hover .product-hover-one {
+    padding: 40px 20px 0;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .product-card-one {
+    max-width: 100%; /* Take full width on very small screens */
+    min-height: 400px;
+    padding-bottom: 10px;
+  }
+
+  .product-card-one:hover {
+    min-height: 450px;
+  }
+
+  .product-info-one h3 {
+    font-size: 18px;
+    line-height: 24px;
+    margin-bottom: 8px;
+  }
+
+  .product-info-one p {
+    font-size: 14px;
+  }
+
+  .product-info-one button,
+  .product-hover-one button {
+    min-width: 150px;
+    font-size: 12px;
+    padding: 6px 20px;
+  }
+
+  .product-hover-one h3 {
+    font-size: 18px;
+    margin-top: 25%;
+  }
+
+  .product-hover-one p {
+    font-size: 12px;
+    margin: 5px 0 10px;
+  }
+
+  .sizes-one {
+    gap: 8px;
+    margin-bottom: 10px;
+  }
+
+  .sizes-one span {
+    padding: 3px 6px;
+    font-size: 11px;
+  }
+
+  .product-card-one:hover .product-hover-one {
+    padding: 30px 15px 0;
+  }
+} 

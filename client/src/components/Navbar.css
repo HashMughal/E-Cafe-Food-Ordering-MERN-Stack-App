@@ -1,0 +1,152 @@
+/* NavBar.css */
+.nav-bar {
+    background-color: #f5e9d7;
+    width: 100%;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  ._first {
+    background-color: #f5e9d7;
+  }
+  
+  ._second {
+    background-color: #bab2a6;
+  }
+  
+  .nav-list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    list-style: none;
+    padding: 10px 20px;
+    flex-wrap: wrap;
+  }
+  
+  .nav-item {
+    margin-right: 20px;
+  }
+  
+  .nav-item a {
+    text-decoration: none;
+    color: #333;
+    font-size: 14px;
+    font-weight: 500;
+    transition: color 0.3s ease;
+  }
+  
+  .nav-item a:hover {
+    color: #d32f2f;
+  }
+  
+  ._second ul {
+    display: flex;
+    list-style: none;
+    padding: 10px 20px;
+    align-items: center;
+    background: #fff;
+  }
+  
+  ._second ul li {
+    margin-right: 10px;
+    color: #fff;
+    font-weight: 600;
+  }
+  
+  ._second ul li i {
+    font-size: 16px;
+    color: #ac8342;
+  }
+  
+  ._second ul li span {
+    font-size: 12px;
+    line-height: 22px;
+    font-weight: 400;
+    text-transform: capitalize;
+    color: #ac8342;
+    padding: 0;
+    border-bottom: 0 solid transparent;
+    transition: .3s ease-in-out;
+  }
+
+  /* Responsive Adjustments for Navbar */
+@media screen and (max-width: 1024px) {
+  .nav-list {
+    padding: 10px 15px;
+    justify-content: center;
+  }
+
+  .nav-item {
+    margin-right: 15px;
+    margin-bottom: 5px;
+  }
+
+  .nav-item a {
+    font-size: 13px;
+  }
+
+  ._second ul {
+    padding: 8px 15px;
+  }
+
+  ._second ul li {
+    margin-right: 8px;
+  }
+
+  ._second ul li i {
+    font-size: 14px;
+  }
+
+  ._second ul li span {
+    font-size: 11px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .nav-bar {
+    border-bottom: none; /* Remove border on smaller screens if header handles it */
+  }
+
+  ._first {
+    display: none; /* Hide the main category links on small screens */
+  }
+
+  ._second {
+    width: 100%;
+    background-color: #bab2a6;
+    justify-content: center; /* Center the home icon and current page */
+  }
+
+  ._second ul {
+    padding: 10px 20px;
+  }
+
+  ._second ul li {
+    margin-right: 15px;
+  }
+
+  ._second ul li i {
+    font-size: 18px;
+  }
+
+  ._second ul li span {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  ._second ul {
+    padding: 8px 15px;
+  }
+
+  ._second ul li {
+    margin-right: 10px;
+  }
+
+  ._second ul li i {
+    font-size: 16px;
+  }
+
+  ._second ul li span {
+    font-size: 12px;
+  }
+}

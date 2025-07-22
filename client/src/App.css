@@ -1,0 +1,99 @@
+/* Global styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 19px;
+  line-height: 1.5;
+  color: #333;
+}
+
+.app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
+}
+
+/* Responsive styles */
+@media screen and (max-width: 768px) {
+  body {
+    font-size: 16px;
+  }
+}
+
+/* Utility classes */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.text-center {
+  text-align: center;
+}
+
+/* Animation classes */
+.fade-in {
+  animation: fadeIn 0.3s ease-in;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Common button styles */
+.btn {
+  display: inline-block;
+  padding: 12px 30px;
+  border: 1px solid #d6b977;
+  color: #d6b977;
+  text-decoration: none;
+  border-radius: 30px;
+  transition: all 0.3s ease;
+  font-size: 1rem;
+  cursor: pointer;
+  background: transparent;
+}
+
+.btn:hover {
+  background-color: #d6b977;
+  color: #000;
+}
+
+/* Common section styles */
+.section {
+  padding: 50px 20px;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+  letter-spacing: 2px;
+  text-align: center;
+}
+
+/* Common link styles */
+.link {
+  color: #d40000;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.link:hover {
+  color: #a00000;
+} 

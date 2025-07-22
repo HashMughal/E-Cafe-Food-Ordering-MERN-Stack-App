@@ -1,0 +1,291 @@
+/* Sidebar (Hamburger Menu) */
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: -385px;
+  width: 385px;
+  height: 100%;
+  background-color: #f5e9d7;
+  z-index: 1100;
+  transition: left 0.3s ease;
+  padding: 0;
+  overflow-y: auto;
+}
+
+.sidebar.open {
+  left: 0;
+}
+
+.sidebar h3 {
+  font-size: 16px;
+  font-weight: 550;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  color: #333;
+  background-color: rgba(231, 215, 186, .5);
+  width: 100%;
+  padding: 10px 25px;
+  cursor: pointer;
+}
+
+.sidebar h3:nth-child(1) {
+  margin-bottom: 15px;
+  padding: 18px 25px;
+}
+
+.sidebar h3:nth-child(2) {
+  margin-bottom: 0;
+}
+
+.sidebar ul {
+  list-style: none;
+  margin-bottom: 8px;
+}
+
+.sidebar ul li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 12px;
+  cursor: pointer;
+  letter-spacing: 2px;
+  padding: 0 25px;
+}
+
+.sidebar ul li:hover {
+  color: #d32f2f;
+}
+
+.sidebar ul li i {
+  font-size: 11px;
+  color: #555;
+}
+
+.sidebar ul li a {
+  text-decoration: none;
+  color: inherit;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Cart Sidebar */
+.cart-sidebar {
+  position: fixed;
+  top: 0;
+  right: -385px;
+  width: 385px;
+  height: 100%;
+  background-color: #fff;
+  z-index: 1100;
+  transition: right 0.3s ease;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.cart-sidebar.open {
+  right: 0;
+}
+
+.cart-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.cart-header h3 {
+  font-size: 24px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.cart-header button {
+  font-size: 16px;
+  color: #555;
+  cursor: pointer;
+  background: none;
+  border: none;
+}
+
+.cart-content {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.cart-content i {
+  font-size: 40px;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+.cart-content p {
+  font-size: 16px;
+  color: #555;
+}
+
+/* Overlay */
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1090;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.overlay.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* Menu and Cart Toggle Buttons */
+.menu-toggle-btn, .cart-toggle-btn, .cart-close-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: inherit;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  .sidebar {
+    width: 85vw;
+    max-width: 350px;
+    left: -85vw;
+    background-color: #f5e9d7;
+    padding: 20px;
+    box-shadow: 2px 0 10px rgba(0, 0, 0, 0.2);
+    overflow-y: auto;
+  }
+
+  .sidebar.open {
+    left: 0;
+  }
+
+  .sidebar h3 {
+    font-size: 24px;
+    padding: 15px 0;
+    margin-bottom: 20px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  }
+
+  .sidebar ul {
+    margin-bottom: 20px;
+  }
+
+  .sidebar ul li {
+    font-size: 18px;
+    padding: 15px 0;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+  }
+
+  .sidebar ul li i {
+    font-size: 14px;
+  }
+
+  .sidebar h3 a {
+    font-size: 24px;
+  }
+
+  .cart-sidebar {
+    width: 90vw;
+    max-width: 350px;
+    right: -90vw;
+    padding: 15px;
+  }
+
+  .cart-sidebar.open {
+    right: 0;
+  }
+
+  .cart-header h3 {
+    font-size: 18px;
+  }
+
+  .cart-header button {
+    font-size: 14px;
+  }
+
+  .cart-content i {
+    font-size: 30px;
+  }
+
+  .cart-content p {
+    font-size: 14px;
+  }
+
+  .overlay {
+    background: rgba(0, 0, 0, 0.5);
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .sidebar {
+    width: 95vw; /* Almost full width for very small screens */
+    left: -95vw;
+    padding: 15px;
+  }
+
+  .sidebar.open {
+    left: 0;
+  }
+
+  .sidebar h3 {
+    font-size: 20px;
+    padding: 12px 0;
+    margin-bottom: 15px;
+  }
+
+  .sidebar ul li {
+    font-size: 16px;
+    padding: 12px 0;
+    margin-bottom: 8px;
+  }
+
+  .sidebar ul li i {
+    font-size: 12px;
+  }
+
+  .sidebar h3 a {
+    font-size: 20px;
+  }
+
+  .cart-sidebar {
+    width: 95vw; /* Almost full width for very small screens */
+    right: -95vw;
+    padding: 10px;
+  }
+
+  .cart-header h3 {
+    font-size: 16px;
+  }
+
+  .cart-header button {
+    font-size: 12px;
+  }
+
+  .cart-content i {
+    font-size: 25px;
+  }
+
+  .cart-content p {
+    font-size: 12px;
+  }
+} 

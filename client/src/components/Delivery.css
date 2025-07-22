@@ -1,0 +1,218 @@
+.modal-content {
+      border-radius: 15px;
+      padding: 20px;
+      font-family: 'Poppins', sans-serif;
+      max-width: 500px;
+      margin: 40px auto;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    }
+
+    .modal-header {
+      border-bottom: none;
+      position: relative;
+    }
+
+    .modal-title {
+      font-size: 18px;
+      font-weight: 600;
+      text-align: center;
+      width: 100%;
+    }
+
+    .toggle-buttons {
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+      margin-bottom: 15px;
+    }
+
+    .toggle-buttons .btn {
+      border-radius: 50px;
+      font-size: 14px;
+      padding: 5px 20px;
+      transition: all 0.3s ease;
+    }
+
+    .toggle-buttons .btn-outline-dark {
+      border-color: #ccc;
+      color: #333;
+    }
+
+    .toggle-buttons .btn-primary {
+      background-color: #c5203c;
+      border-color: #c5203c;
+      color: white;
+    }
+
+    .sign-in-text {
+      text-align: center;
+      font-size: 14px;
+      margin-bottom: 15px;
+    }
+
+    .sign-in-text a {
+      color: #c5203c;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    .find-bakery-btn {
+      display: block;
+      width: 100%;
+      background-color: transparent;
+      border: 1px solid #c5203c;
+      color: #c5203c;
+      font-size: 14px;
+      font-weight: 500;
+      border-radius: 50px;
+      padding: 8px;
+      margin-bottom: 15px;
+      transition: all 0.3s ease;
+    }
+
+    .find-bakery-btn:hover {
+      background-color: #c5203c;
+      color: white;
+    }
+
+    .map-container {
+      width: 100%;
+      height: 150px;
+      background-color: #f0f0f0;
+      border-radius: 10px;
+      margin-bottom: 15px;
+      overflow: hidden;
+    }
+
+    .map-container img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .location-select {
+      width: 100%;
+      padding: 8px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+      font-size: 14px;
+      margin-bottom: 10px;
+    }
+
+    .closing-time {
+      text-align: center;
+      font-size: 14px;
+      color: #333;
+      margin-bottom: 15px;
+    }
+
+    .save-btn {
+      display: block;
+      width: 100%;
+      background-color: #c5203c;
+      border: none;
+      color: white;
+      font-size: 16px;
+      font-weight: 500;
+      border-radius: 50px;
+      padding: 10px;
+      transition: all 0.3s ease;
+    }
+
+    .save-btn:hover {
+      background-color: #a41830;
+    }
+
+@media screen and (max-width: 768px) {
+  .modal-content {
+    max-width: 90%; /* Adjust max-width for tablets */
+    margin: 30px auto; /* Adjust top/bottom margin */
+    padding: 15px;
+  }
+
+  .modal-title {
+    font-size: 16px; /* Scale down title */
+  }
+
+  .toggle-buttons .btn {
+    font-size: 13px; /* Scale down button font size */
+    padding: 4px 15px;
+  }
+
+  .sign-in-text {
+    font-size: 13px;
+  }
+
+  .find-bakery-btn {
+    font-size: 13px;
+    padding: 7px;
+  }
+
+  .map-container {
+    height: 120px; /* Adjust map height */
+  }
+
+  .location-select {
+    font-size: 13px;
+    padding: 7px;
+  }
+
+  .closing-time {
+    font-size: 13px;
+  }
+
+  .save-btn {
+    font-size: 14px;
+    padding: 9px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .modal-content {
+    max-width: 95%; /* Adjust max-width for smaller phones */
+    margin: 20px auto;
+    padding: 10px;
+  }
+
+  .modal-title {
+    font-size: 14px;
+  }
+
+  .toggle-buttons {
+    flex-direction: column; /* Stack buttons vertically */
+    gap: 8px;
+  }
+
+  .toggle-buttons .btn {
+    width: 100%;
+    font-size: 12px;
+    padding: 8px 10px;
+  }
+
+  .sign-in-text {
+    font-size: 12px;
+  }
+
+  .find-bakery-btn {
+    font-size: 12px;
+    padding: 6px;
+  }
+
+  .map-container {
+    height: 100px;
+  }
+
+  .location-select {
+    font-size: 12px;
+    padding: 6px;
+  }
+
+  .closing-time {
+    font-size: 12px;
+  }
+
+  .save-btn {
+    font-size: 13px;
+    padding: 8px;
+  }
+} 

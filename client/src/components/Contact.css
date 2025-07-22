@@ -1,0 +1,260 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+/* global styling for website  */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  box-sizing: border-box;
+  overflow-x: hidden;
+  padding: 0;
+  margin: 0;
+  width: 100vw;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 19px;
+}
+
+/* now form  */
+.container {
+  width: 100vw;
+  margin: 0 auto;
+  background-color: #fff;
+}
+
+h1 {
+  text-align: center;
+  font-size: 35px;
+  margin-bottom: 10px;
+  color: #333;
+  letter-spacing: 4px;
+}
+
+.intro {
+  text-align: center;
+  font-size: 18px;
+  color: #666;
+  margin: auto;
+  margin-bottom: 30px;
+  max-width: 70%;
+}
+
+.content {
+  display: flex;
+  justify-content: center;
+  width: 100vw;
+  gap: 30px;
+}
+
+.form-section {
+  width: 60%;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-row {
+  display: flex;
+  gap: 20px;
+  /* Space between Name and Email fields */
+  flex-wrap: wrap;
+  /* Allow wrapping if the screen is too small */
+}
+
+.form-row .form-group {
+  flex: 1;
+  /* Each field takes equal space */
+  min-width: 200px;
+  /* Ensure fields don't get too narrow */
+}
+
+.form-group label {
+  display: block;
+  font-size: 18px;
+  color: #333;
+  margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 22px;
+  background-color: #f9f9f9;
+}
+
+.form-group textarea {
+  height: 100px;
+  resize: none;
+}
+
+button {
+  background-color: #d32f2f;
+  color: #fff;
+  padding: 10px 30px;
+  border: none;
+  border-radius: 18px;
+  font-size: 16px;
+  cursor: pointer;
+  display: block;
+  margin-top: 10px;
+}
+
+button:hover {
+  background-color: #b71c1c;
+}
+
+.contact-info {
+  flex: 0.8;
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  width: 40%;
+}
+
+.contact-info h3 {
+  font-size: 18px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.contact-info p:nth-child(2) {
+  font-size: 16px;
+  color: #666;
+  margin-bottom: 35px;
+}
+
+.contact-info p {
+  margin-bottom: 20px;
+}
+
+.contact-info h4 {
+  font-size: 16px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.contact-info .icon {
+  margin-right: 10px;
+}
+
+.map-section {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.map-section img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+ /* responsiveness  */
+@media (max-width: 768px) {
+  /* Stack form and contact-info vertically */
+  .content {
+    flex-direction: column;
+    padding: 0 20px; /* Add padding to content */
+  }
+
+  h1 {
+    font-size: 30px;
+  }
+
+  .intro {
+    font-size: 16px;
+    max-width: 90%; /* Adjust max-width for intro text */
+    margin-bottom: 20px;
+  }
+
+  /* Form takes full width */
+  .form-section {
+    width: 100%;
+  }
+
+  .form-group input,
+  .form-group textarea {
+    font-size: 18px;
+  }
+
+  /* Contact info moves below */
+  .contact-info {
+    width: 100%;
+    padding: 15px;
+  }
+
+  .contact-info h3 {
+    font-size: 20px;
+  }
+
+  .contact-info p,
+  .contact-info h4 {
+    font-size: 15px;
+  }
+
+  /* Hide nav-bar */
+  .nav-bar {
+    display: none;
+  }
+
+  button {
+    padding: 12px 25px;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 24px;
+    letter-spacing: 2px;
+  }
+
+  .intro {
+    font-size: 14px;
+    max-width: 95%;
+    margin-bottom: 15px;
+  }
+
+  .content {
+    padding: 0 15px;
+    gap: 20px;
+  }
+
+  .form-group label {
+    font-size: 16px;
+  }
+
+  .form-group input,
+  .form-group textarea {
+    font-size: 16px;
+    padding: 8px;
+  }
+
+  .form-group {
+    margin-bottom: 15px;
+  }
+
+  .form-row {
+    gap: 15px;
+  }
+
+  .contact-info h3 {
+    font-size: 18px;
+  }
+
+  .contact-info p,
+  .contact-info h4 {
+    font-size: 14px;
+  }
+
+  button {
+    padding: 10px 20px;
+    font-size: 13px;
+  }
+} 

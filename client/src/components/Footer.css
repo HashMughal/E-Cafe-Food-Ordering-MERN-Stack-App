@@ -1,0 +1,316 @@
+/* Footer code */
+.footer {
+  background-color: #f1eee3;
+  padding: 40px 20px;
+  color: #333;
+  font-size: 20px;
+  line-height: 22px;
+}
+
+.heademail {
+  max-width: 90vw;
+  height: 120px;
+  display: flex;
+  margin: 0 auto 40px auto;
+}
+
+.head {
+  width: 50%;
+  align-items: flex-start;
+  padding-top: 15px;
+}
+
+.head h2 {
+  font-size: 36px;
+  line-height: 58px;
+  font-weight: 600;
+  color: #1b1b1b;
+  letter-spacing: 4.4px;
+}
+
+.head p {
+  font-size: 16px;
+  color: #333;
+}
+
+.email {
+  width: 50%;
+  padding-top: 20px;
+  display: flex;
+  justify-content: end;
+}
+
+.email input {
+  border: none;
+  outline: none;
+  height: 65px;
+  width: 50%;
+  font-size: 20px;
+  color: #373737;
+  background-image: url('../../public/Images/mail_logo.webp');
+  background-repeat: no-repeat;
+  background-size: 24px;
+  background-position: 4% center;
+  padding-left: 60px;
+  background-color: #faf4e7;
+  color: #000000;
+  margin: 0;
+}
+
+.email button {
+  font-size: 20px;
+  color: #f0e7d9;
+  background-color: #454545;
+  border: none;
+  align-items: center;
+  font-weight: 400;
+  min-width: 9em;
+  cursor: pointer;
+  margin: 0;
+  height: 65px;
+}
+
+.email button span {
+  font-size: 20px;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  max-width: 90vw;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.footer-section {
+  width: auto;
+  font-size: 22px;
+}
+
+.footer-section h3 {
+  font-size: 18px;
+  font-weight: 800;
+  margin-bottom: 15px;
+  letter-spacing: 2.4px;
+}
+
+.footer-section ul {
+  list-style: none;
+}
+
+.footer-section ul li {
+  margin-bottom: 10px;
+  font-size: 16px;
+  color: #555;
+}
+
+.footer-section ul li:hover {
+  cursor: pointer;
+}
+
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 90vw;
+  margin: 40px auto 0;
+  padding-top: 20px;
+  border-top: 1px solid #ddd;
+}
+
+.social-icons {
+  display: flex;
+  gap: 18px;
+  width: 200px;
+  text-align: start;
+}
+
+.social-icons a svg {
+  width: 30px;
+  height: 30px;
+}
+
+.footer-bottom p {
+  font-size: 15px;
+  color: #777;
+}
+
+/* Responsive styles */
+@media screen and (max-width: 768px) {
+  .footer {
+    padding: 30px 15px;
+    font-size: 16px;
+  }
+
+  .heademail {
+    flex-direction: column;
+    height: auto;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 25px;
+  }
+
+  .head,
+  .email {
+    width: 100%;
+    padding: 10px 0;
+  }
+
+  .head h2 {
+    font-size: 24px;
+    line-height: 32px;
+    letter-spacing: 3px;
+  }
+
+  .head p {
+    font-size: 14px;
+  }
+
+  .email input {
+    width: 90%;
+    max-width: 300px;
+    height: 48px;
+    font-size: 16px;
+    padding-left: 40px;
+    background-size: 20px;
+  }
+
+  .email button {
+    width: 90%;
+    max-width: 300px;
+    height: 48px;
+    font-size: 16px;
+  }
+
+  .email button span {
+    font-size: 16px;
+  }
+
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+  }
+
+  .footer-section {
+    margin-bottom: 20px;
+    width: 100%;
+  }
+
+  .footer-section h3 {
+    font-size: 16px;
+    letter-spacing: 2px;
+  }
+
+  .footer-section ul li {
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    text-align: center;
+    margin-top: 20px;
+    padding-top: 15px;
+  }
+
+  .social-icons {
+    justify-content: center;
+    margin-bottom: 15px;
+    gap: 15px;
+  }
+
+  .social-icons a svg {
+    width: 25px;
+    height: 25px;
+  }
+
+  .footer-bottom p {
+    font-size: 12px;
+    padding: 0 10px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .footer {
+    padding: 20px 10px;
+  }
+
+  .head h2 {
+    font-size: 20px;
+    line-height: 28px;
+  }
+
+  .head p {
+    font-size: 12px;
+  }
+
+  .email input,
+  .email button {
+    width: 100%;
+    max-width: 250px;
+    height: 40px;
+    font-size: 14px;
+  }
+
+  .email input {
+    padding-left: 35px;
+    background-size: 18px;
+  }
+
+  .footer-container {
+    gap: 15px;
+  }
+
+  .footer-section h3 {
+    font-size: 14px;
+    letter-spacing: 1.5px;
+  }
+
+  .footer-section ul li {
+    font-size: 12px;
+    margin-bottom: 8px;
+  }
+
+  .social-icons {
+    gap: 10px;
+  }
+
+  .social-icons a svg {
+    width: 20px;
+    height: 20px;
+  }
+
+  .footer-bottom p {
+    font-size: 10px;
+    padding: 0 5px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .head h2 {
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  .email input,
+  .email button {
+    height: 35px;
+    font-size: 12px;
+  }
+
+  .email input {
+    padding-left: 30px;
+    background-size: 16px;
+  }
+
+  .social-icons a svg {
+    width: 18px;
+    height: 18px;
+  }
+
+  .footer-bottom p {
+    font-size: 9px;
+  }
+} 

@@ -1,0 +1,90 @@
+.classic-baking {
+  background-color: #fefaf5;
+  text-align: center;
+  padding: 60px 20px;
+  font-family: Arial, sans-serif;
+}
+
+.baking-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  letter-spacing: 4px;
+  margin-bottom: 20px;
+  color: #111;
+}
+
+.baking-subtitle {
+  font-size: 1.5rem;
+  letter-spacing: 4px;
+  margin-bottom: 30px;
+  color: #111;
+}
+
+.baking-text {
+  font-size: 19px;
+  color: #555;
+  max-width: 840px;
+  margin: 0 auto 20px;
+  line-height: 1.6;
+}
+
+.read-more {
+  display: inline-block;
+  font-size: 19px;
+  color: #d40000;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.read-more:hover {
+  color: #a00000;
+}
+
+.locations {
+  margin-top: 30px;
+  font-size: 1.2rem;
+  letter-spacing: 3px;
+  color: #333;
+}
+
+.imagescatch {
+  height: auto;
+  width: 100%;
+  overflow: hidden;
+}
+
+.imagescatch img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+@media screen and (max-width: 768px) {
+  .classic-baking {
+    padding: 30px 15px;
+  }
+
+  .baking-title {
+    font-size: 1.8rem;
+    letter-spacing: 3px;
+  }
+
+  .baking-subtitle {
+    font-size: 1.3rem;
+    letter-spacing: 3px;
+  }
+
+  .baking-text {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+
+  .read-more {
+    font-size: 16px;
+  }
+
+  .locations {
+    font-size: 1rem;
+    letter-spacing: 2px;
+  }
+} 

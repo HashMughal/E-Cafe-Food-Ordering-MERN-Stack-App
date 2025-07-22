@@ -1,0 +1,398 @@
+.checkout-container {
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+.checkout-container h1 {
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #333;
+}
+
+.checkout-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+
+.order-summary {
+  background: #f8f9fa;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.order-summary h2 {
+  margin-bottom: 1.5rem;
+  color: #333;
+}
+
+.checkout-item {
+  display: flex;
+  gap: 1rem;
+  padding: 1rem 0;
+  border-bottom: 1px solid #dee2e6;
+}
+
+.checkout-item img {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+.item-details h4 {
+  margin: 0 0 0.5rem 0;
+  color: #333;
+}
+
+.item-details p {
+  margin: 0.25rem 0;
+  color: #666;
+}
+
+.order-total {
+  margin-top: 1.5rem;
+  padding-top: 1.5rem;
+  border-top: 2px solid #dee2e6;
+}
+
+.subtotal, .total {
+  display: flex;
+  justify-content: space-between;
+  margin: 0.5rem 0;
+}
+
+.total {
+  font-weight: bold;
+  font-size: 1.2rem;
+  color: #333;
+}
+
+.checkout-form {
+  background: #fff;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.checkout-form h2 {
+  margin-bottom: 1.5rem;
+  color: #333;
+}
+
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+  color: #333;
+}
+
+.form-group input,
+.form-group select {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #dee2e6;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+  outline: none;
+  border-color: #007bff;
+  box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.25);
+}
+
+.place-order-btn {
+  width: 100%;
+  padding: 1rem;
+  background: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.place-order-btn:hover {
+  background: #0056b3;
+}
+
+.error-message {
+  background: #dc3545;
+  color: white;
+  padding: 1rem;
+  border-radius: 4px;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.checkout-loading {
+  text-align: center;
+  padding: 2rem;
+  font-size: 1.2rem;
+  color: #666;
+}
+
+.empty-cart-message {
+  text-align: center;
+  padding: 3rem;
+}
+
+.empty-cart-message h2 {
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+.empty-cart-message button {
+  padding: 0.75rem 1.5rem;
+  background: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.empty-cart-message button:hover {
+  background: #0056b3;
+}
+
+@media (max-width: 768px) {
+  .checkout-container {
+    padding: 0 15px;
+    margin: 1.5rem auto;
+  }
+
+  .checkout-container h1 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .checkout-content {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  
+  .order-summary {
+    order: 2;
+    padding: 1rem;
+  }
+  
+  .order-summary h2,
+  .checkout-form h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+
+  .checkout-item img {
+    width: 60px;
+    height: 60px;
+  }
+
+  .item-details h4 {
+    font-size: 0.9rem;
+  }
+
+  .item-details p {
+    font-size: 0.8rem;
+  }
+
+  .subtotal span,
+  .total span {
+    font-size: 0.9rem;
+  }
+
+  .total {
+    font-size: 1.1rem;
+  }
+
+  .checkout-form {
+    order: 1;
+    padding: 1rem;
+  }
+
+  .form-group label {
+    font-size: 0.9rem;
+  }
+
+  .form-group input,
+  .form-group select {
+    padding: 0.6rem;
+    font-size: 0.9rem;
+  }
+
+  .place-order-btn {
+    padding: 0.8rem;
+    font-size: 1rem;
+  }
+
+  .error-message {
+    padding: 0.8rem;
+    font-size: 0.9rem;
+  }
+
+  .empty-cart-message h2 {
+    font-size: 1.8rem;
+  }
+
+  .empty-cart-message button {
+    padding: 0.6rem 1.2rem;
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .checkout-container {
+    margin: 1rem auto;
+  }
+
+  .checkout-container h1 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+  }
+
+  .order-summary h2,
+  .checkout-form h2 {
+    font-size: 1.3rem;
+  }
+
+  .checkout-item img {
+    width: 50px;
+    height: 50px;
+  }
+
+  .item-details h4 {
+    font-size: 0.8rem;
+  }
+
+  .item-details p {
+    font-size: 0.7rem;
+  }
+
+  .subtotal span,
+  .total span {
+    font-size: 0.8rem;
+  }
+
+  .total {
+    font-size: 1rem;
+  }
+
+  .form-group label {
+    font-size: 0.8rem;
+  }
+
+  .form-group input,
+  .form-group select {
+    padding: 0.5rem;
+    font-size: 0.8rem;
+  }
+
+  .place-order-btn {
+    padding: 0.7rem;
+    font-size: 0.9rem;
+  }
+
+  .error-message {
+    padding: 0.7rem;
+    font-size: 0.8rem;
+  }
+
+  .empty-cart-message h2 {
+    font-size: 1.5rem;
+  }
+
+  .empty-cart-message button {
+    padding: 0.5rem 1rem;
+    font-size: 0.8rem;
+  }
+}
+
+.order-success-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0,0,0,0.4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2000;
+}
+
+.order-success-content {
+  background: #fff;
+  padding: 2.5rem 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 32px rgba(0,0,0,0.15);
+  text-align: center;
+  min-width: 320px;
+}
+
+.order-success-content h2 {
+  color: #28a745;
+  margin-bottom: 1rem;
+}
+
+.order-success-content p {
+  color: #333;
+  margin-bottom: 2rem;
+}
+
+.continue-shopping-btn {
+  background: #28a745;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 0.75rem 2rem;
+  font-size: 1.1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.continue-shopping-btn:hover {
+  background: #218838;
+}
+
+.orders-list {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.order-card {
+  background: #f8f9fa;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  padding: 1.5rem 1.5rem 1rem 1.5rem;
+}
+
+.order-header {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.2rem;
+  font-size: 1rem;
+  color: #333;
+}
+
+.order-header span {
+  margin-bottom: 0.5rem;
+}
+
+.order-items {
+  border-top: 1px solid #e0e0e0;
+  padding-top: 1rem;
+} 

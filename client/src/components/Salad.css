@@ -1,0 +1,141 @@
+.main_container {
+    margin-top: 60px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    padding: 0 25px;
+}
+
+.create_bowl_outer {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 100%;
+    gap: 15px;
+}
+
+.common_block {
+    flex: 1;
+    position: relative;
+    min-height: 400px;
+    max-width: 50%;
+}
+
+.image_bowl {
+    background: url('Images/create_bowl.webp') no-repeat center center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.overlayy {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.create_bowl {
+    background: #f5f1e9;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    border: 2px dashed black;
+}
+
+.create_circle {
+    width: 180px;
+    height: 180px;
+    border: 2px dashed #ff4d4d;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    background-color: white;
+}
+
+.circle_title {
+    font-size: 24px;
+    color: #ff4d4d;
+    text-decoration: none;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+}
+
+.create_title {
+    font-size: 28px;
+    color: #333;
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+.product-section-title {
+    margin-top: 40px; /* Adjust as needed */
+    margin-bottom: 30px; /* Adjust as needed */
+}
+
+@media screen and (max-width: 768px) {
+  .main_container {
+    margin-top: 40px;
+    padding: 0 15px;
+  }
+
+  .create_bowl_outer {
+    flex-direction: column; /* Stack vertically */
+    gap: 20px;
+  }
+
+  .common_block {
+    max-width: 100%; /* Take full width when stacked */
+    min-height: 300px;
+  }
+
+  .create_circle {
+    width: 150px;
+    height: 150px;
+    margin-bottom: 15px;
+  }
+
+  .circle_title {
+    font-size: 20px; /* Scale down title */
+  }
+
+  .create_title {
+    font-size: 22px; /* Scale down title */
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .main_container {
+    margin-top: 30px;
+    padding: 0 10px;
+  }
+
+  .create_bowl_outer {
+    gap: 15px;
+  }
+
+  .common_block {
+    min-height: 250px;
+  }
+
+  .create_circle {
+    width: 120px;
+    height: 120px;
+    margin-bottom: 10px;
+  }
+
+  .circle_title {
+    font-size: 16px;
+  }
+
+  .create_title {
+    font-size: 18px;
+  }
+} 

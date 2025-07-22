@@ -1,0 +1,783 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+/* global styling for website  */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  width: 100vw;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 19px;
+}
+
+/* Delivery Text Section */
+.delivery_txt {
+  background-color: #c5203c;
+  padding: 12px;
+  text-align: center;
+  transition: all .5s ease;
+  opacity: 1;
+  height: auto;
+  position: relative;
+  top: 0;
+  z-index: 1000;
+}
+
+.delivery_txt p {
+  color: #fff;
+  font-size: 15px;
+  line-height: 23px;
+  font-weight: 500;
+}
+
+.delivery_txt a {
+  color: #fff;
+  font-weight: 500;
+  text-decoration: underline;
+}
+
+/* Navigation Bar */
+.nav-bar {
+  background-color: #f5e9d7;
+  width: 100%;
+  border-bottom: 1px solid #ddd;
+}
+
+._first {
+  background-color: #f5e9d7;
+}
+
+._second {
+  background-color: #bab2a6;
+}
+
+.nav-list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  list-style: none;
+  padding: 10px 20px;
+  /* Consistent padding */
+  flex-wrap: wrap;
+  /* Wrap instead of scrolling */
+}
+
+.nav-item {
+  margin-right: 20px;
+}
+
+.nav-item a {
+  text-decoration: none;
+  color: #333;
+  font-size: 14px;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.nav-item a:hover {
+  color: #d32f2f;
+}
+
+._second ul {
+  display: flex;
+  list-style: none;
+  padding: 10px 20px;
+  align-items: center;
+  background: #fff;
+}
+
+._second ul li {
+  margin-right: 10px;
+  color: #fff;
+  font-weight: 600;
+}
+
+._second ul li i {
+  font-size: 16px;
+  color: #ac8342;
+}
+
+._second ul li span {
+  font-size: 12px;
+  line-height: 22px;
+  font-weight: 400;
+  text-transform: capitalize;
+  color: #ac8342;
+  padding: 0;
+  border-bottom: 0 solid transparent;
+  transition: .3s ease-in-out;
+}
+
+/* About Page Container */
+.about-page {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+.about-content {
+  width: 100%;
+}
+
+/* Image Section */
+.image-section {
+  text-align: center;
+  width: 100%;
+  margin-bottom: 60px;
+}
+
+.image-section img {
+  width: 100%;
+  max-width: 100%;
+  margin-bottom: 25px;
+}
+
+/* Container Section */
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 20px 20px 40px;
+  max-width: 100vw;
+  margin: auto;
+}
+
+.image-container,
+.text-container {
+  flex: 1;
+  width: 50%;
+  padding: 20px;
+}
+
+.image-container img {
+  min-height: 550px;
+  max-height: 600px;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.text-container h1 {
+  font-size: 48px;
+  font-weight: 700;
+  letter-spacing: 4px;
+  color: #333;
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.text-container p {
+  font-size: 18px;
+  line-height: 1.6;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+/* Classic Baking Section */
+.classic-baking {
+  background-color: #fdfaf6;
+  text-align: center;
+  padding: 60px 20px;
+  margin-bottom: 60px;
+}
+
+.baking-title {
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: #333;
+  letter-spacing: 5px;
+  margin-bottom: 10px;
+}
+
+.baking-subtitle {
+  font-size: 1.8rem;
+  font-weight: 400;
+  color: #666;
+  letter-spacing: 4px;
+  margin-bottom: 30px;
+}
+
+.baking-text {
+  font-size: 18px;
+  color: #555;
+  line-height: 1.8;
+  max-width: 800px;
+  margin: 0 auto 40px;
+}
+
+.read-more {
+  display: inline-block;
+  background-color: #d32f2f;
+  color: #fff;
+  padding: 12px 30px;
+  border-radius: 25px;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.read-more:hover {
+  background-color: #b71c1c;
+}
+
+.locations {
+  font-size: 1.2rem;
+  color: #777;
+  margin-top: 30px;
+  letter-spacing: 3px;
+}
+
+/* Images Catch Section */
+.imagescatch img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 992px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .image-container,
+  .text-container {
+    width: 100%;
+  }
+
+  .image-container img {
+    min-height: 400px;
+    max-height: 500px;
+  }
+
+  .text-container h1 {
+    font-size: 40px;
+    text-align: center;
+  }
+  }
+
+@media screen and (max-width: 768px) {
+  .baking-title {
+    font-size: 2rem;
+  }
+
+  .baking-subtitle {
+    font-size: 1.5rem;
+  }
+
+  .baking-text {
+    font-size: 16px;
+  }
+
+  .locations {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .text-container h1 {
+    font-size: 32px;
+  }
+
+  .text-container p {
+    font-size: 16px;
+  }
+
+  .baking-title {
+    font-size: 1.8rem;
+  }
+
+  .baking-subtitle {
+    font-size: 1.2rem;
+  }
+}
+
+/* About Container from about.html */
+.about-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+/* About Header from about.html */
+.about-header {
+  text-align: center;
+  padding: 50px 0;
+  margin-bottom: 60px;
+  background: linear-gradient(to right, #f5e9d7, #e0d8cc);
+  border-radius: 8px;
+}
+
+.about-header h1 {
+  font-size: 3.5rem;
+  color: #333;
+  margin-bottom: 15px;
+  font-weight: 700;
+    letter-spacing: 3px;
+  }
+
+.about-header p {
+  font-size: 1.2rem;
+  color: #555;
+  max-width: 700px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+/* About Story Section from about.html */
+.about-story {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  margin-bottom: 80px;
+}
+
+.story-content {
+  flex: 1;
+}
+
+.story-content h2 {
+  font-size: 2.8rem;
+  color: #333;
+  margin-bottom: 20px;
+  position: relative;
+  display: inline-block;
+  font-weight: 600;
+}
+
+.story-content h2::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  width: 80px;
+  height: 4px;
+  background-color: #ac8342;
+  border-radius: 2px;
+}
+
+.story-content p {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.story-image {
+  flex: 1;
+  text-align: center;
+}
+
+.story-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease;
+}
+
+.story-image img:hover {
+  transform: translateY(-5px);
+}
+
+/* About Values Section from about.html */
+.about-values {
+  text-align: center;
+  margin-bottom: 80px;
+}
+
+.about-values h2 {
+  font-size: 2.8rem;
+  color: #333;
+  margin-bottom: 20px;
+  position: relative;
+  display: inline-block;
+  font-weight: 600;
+}
+
+.about-values h2::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -10px;
+  width: 80px;
+  height: 4px;
+  background-color: #ac8342;
+  border-radius: 2px;
+}
+
+.values-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  margin-top: 50px;
+}
+
+.value-item {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.value-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+.value-item i {
+  font-size: 3rem;
+  color: #ac8342;
+  margin-bottom: 20px;
+}
+
+.value-item h3 {
+  font-size: 1.5rem;
+  color: #333;
+  margin-bottom: 15px;
+  font-weight: 600;
+}
+
+.value-item p {
+  font-size: 1rem;
+  color: #666;
+  line-height: 1.6;
+}
+
+/* About Team Section from about.html */
+.about-team {
+  text-align: center;
+  margin-bottom: 80px;
+}
+
+.about-team h2 {
+  font-size: 2.8rem;
+  color: #333;
+  margin-bottom: 20px;
+  position: relative;
+  display: inline-block;
+  font-weight: 600;
+}
+
+.about-team h2::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -10px;
+  width: 80px;
+  height: 4px;
+  background-color: #ac8342;
+  border-radius: 2px;
+}
+
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  margin-top: 50px;
+}
+
+.team-member {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.team-member:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+.member-image {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin: 0 auto 20px;
+  border: 4px solid #ac8342;
+  transition: border-color 0.3s ease;
+}
+
+.member-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.team-member:hover .member-image img {
+  transform: scale(1.05);
+}
+
+.team-member h3 {
+  font-size: 1.4rem;
+  color: #333;
+  margin-bottom: 5px;
+  font-weight: 600;
+}
+
+.team-member .position {
+  font-size: 0.9rem;
+  color: #ac8342;
+  margin-bottom: 15px;
+  font-weight: 500;
+}
+
+.team-member .description {
+  font-size: 0.95rem;
+  color: #666;
+  line-height: 1.6;
+}
+
+/* About Stats Section from about.html */
+.about-stats {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+  background-color: #fdfaf6;
+  padding: 60px 40px;
+  border-radius: 8px;
+  text-align: center;
+}
+
+
+.stat-item h3 {
+  font-size: 3rem;
+  color: #ac8342;
+  margin-bottom: 10px;
+  font-weight: 700;
+}
+
+.stat-item p {
+  font-size: 1.1rem;
+  color: #555;
+  font-weight: 500;
+}
+
+@media (max-width: 992px) {
+  .about-story {
+    flex-direction: column;
+  }
+
+  .story-image {
+    order: -1;
+    margin-bottom: 30px;
+  }
+
+  .story-image img {
+    max-width: 80%;
+  }
+
+  .about-header h1 {
+    font-size: 2.5rem;
+  }
+
+  .about-values h2,
+  .about-team h2 {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .about-container {
+    padding: 20px;
+  }
+
+  .about-header {
+    padding: 30px 0;
+    margin-bottom: 40px;
+  }
+
+  .about-header h1 {
+    font-size: 2rem;
+  }
+
+  .about-header p {
+    font-size: 1rem;
+  }
+
+  .story-content h2,
+  .about-values h2,
+  .about-team h2 {
+    font-size: 1.8rem;
+  }
+
+  .values-grid,
+  .team-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .about-stats {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .about-stats {
+    grid-template-columns: 1fr;
+  }
+
+  .stat-item h3 {
+    font-size: 2rem;
+  }
+
+  .stat-item p {
+    font-size: 1rem;
+  }
+}
+
+/* Cake Section */
+.cake-section {
+  display: flex;
+  align-items: stretch; /* Stretch items to fill the height */
+  justify-content: center;
+  width: 100%;
+  max-width: 1200px;
+  margin: 60px auto;
+  /* Removed background-color: #f8f8f8; as per image */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  overflow: hidden;
+  min-height: 500px; /* Adjust as needed to match the image's height ratio */
+}
+
+.cake-text {
+  flex: 1;
+  background-color: #1a1a1a; /* Dark background as seen in the image */
+  color: #fff;
+  padding: 80px 40px;
+  text-align: center;
+  display: flex;
+    flex-direction: column;
+    align-items: center;
+  justify-content: center;
+  /* Ensure text content fills the available space */
+  }
+
+.cake-text h1 {
+  font-size: 3.5rem;
+  font-weight: 700;
+    margin-bottom: 20px;
+  line-height: 1.2;
+}
+
+.cake-text p {
+  font-size: 1.2rem;
+  line-height: 1.5;
+  margin-bottom: 30px;
+  max-width: 400px;
+}
+
+.divider {
+  width: 100%;
+  height: 1px; /* Make it a thin line */
+  background-color: rgba(255, 255, 255, 0.2);
+  margin: 20px 0;
+  position: relative;
+  max-width: 150px; /* Limit the width of the divider line */
+}
+
+.divider span {
+  display: none; /* Hide the character as it's not in the image */
+}
+
+.circle {
+  width: 20px;
+  height: 20px;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  margin-top: 30px;
+  position: relative;
+  display: flex; /* Use flex to center the inner circle */
+  align-items: center;
+  justify-content: center;
+}
+
+.circle::before {
+  content: '';
+  width: 10px;
+  height: 10px;
+  background-color: #fff;
+  border-radius: 50%;
+}
+
+.cake-image {
+  flex: 1.5; /* Give more space to the image */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.cake-image img {
+    width: 100%;
+  height: 100%; /* Make image fill the height of its container */
+  display: block;
+  object-fit: cover; /* Ensure the image covers the area, cropping if necessary */
+}
+
+/* Responsive adjustments for Cake Section */
+@media screen and (max-width: 992px) {
+  .cake-section {
+    flex-direction: column; /* Stack vertically on smaller screens */
+    min-height: auto; /* Remove min-height when stacking */
+  }
+
+  .cake-text {
+    padding: 60px 30px;
+  }
+
+  .cake-text h1 {
+    font-size: 2.8rem;
+  }
+
+  .cake-text p {
+    font-size: 1.1rem;
+  }
+
+  .divider {
+    max-width: 100px; /* Adjust divider width for smaller screens */
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .cake-text {
+    padding: 40px 20px;
+  }
+
+  .cake-text h1 {
+    font-size: 2.2rem;
+  }
+
+  .cake-text p {
+    font-size: 1rem;
+  }
+
+  .divider {
+    max-width: 80px; /* Further adjust divider width */
+  }
+
+  .circle {
+    width: 15px;
+    height: 15px;
+  }
+
+  .circle::before {
+    width: 8px;
+    height: 8px;
+  }
+} 
